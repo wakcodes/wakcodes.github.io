@@ -1,16 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Waqar Ahmad Khan - Software Engineer</title>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h2>Waqar Ahmad Khan</h2>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Waqar Ahmad Khan</h1>
+        <h2>Software Engineer</h2>
+        <p>Email: <a href="mailto:email@waqarahmadkhan.me">email@waqarahmadkhan.me</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bhali16/">bhali16</a></p>
+        <p>GitHub: <a href="https://github.com/bhali16">bhali16</a></p>
+        <img src="https://via.placeholder.com/500x500" alt="Placeholder Image">
+      </main>
+      <footer>
+        <p>&copy; 2023 Waqar Ahmad Khan</p>
+      </footer>
     </div>
-</body>
+
+    <script>
+      new Vue({
+        el: "#app",
+      });
+    </script>
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      #app {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin-right: 1rem;
+      }
+
+      main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+      }
+
+      footer {
+        background-color: #f1f1f1;
+        padding: 1rem;
+        text-align: center;
+      }
+    </style>
+  </body>
 </html>
